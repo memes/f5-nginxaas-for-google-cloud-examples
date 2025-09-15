@@ -19,8 +19,6 @@ permissions:
 jobs:
   container-stager:
     runs-on: ubuntu-latest
-    # TODO: enable in project bootstrapped from module
-    if: false
     env:
       GCRANE_VERSION: 0.20.6
     steps:
@@ -33,14 +31,13 @@ jobs:
         name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
         with:
-          service_account: ${{ secrets.SERVICE_ACCOUNT }}
+          service_account: ${{ secrets.AR_SERVICE_ACCOUNT }}
           token_format: access_token
           workload_identity_provider: ${{ secrets.WORKLOAD_IDENTITY_PROVIDER_ID }}
       - id: gcrane_ghcr_auth
         name: Authenticate to GHCR, if applicable
         run: |
           gcrane auth login ghcr.io --username "${{ github.actor }}" --password "${{ github.token }}"
-      # TODO: remove or disable if not needed for demo environment
       - id: gcrane_nginx_auth
         name: Authenticate to NGINX+ repo, if applicable
         run: |

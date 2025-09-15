@@ -1,5 +1,5 @@
 {
-    "name": "memes-terraform-google-f5-demo-bootstrap-template",
+    "name": "memes-f5-nginxaas-for-google-cloud-examples",
     "image": "mcr.microsoft.com/devcontainers/python:3.12-bookworm",
     "features": {
         "ghcr.io/memes/devcontainers-features/direnv:1": {},
@@ -7,6 +7,9 @@
             "version": "none",
             "helm": "latest",
             "minikube": "none"
+        },
+        "ghcr.io/memes/devcontainers-features/hashicorp:1": {
+            "terraform": "1.5.7"
         },
         "ghcr.io/memes/devcontainers-features/google-cloud-cli:1": {
             "components": "kpt kubectl kustomize gke-gcloud-auth-plugin",
@@ -24,8 +27,7 @@
         },
         "ghcr.io/memes/devcontainers-features/tflint:1": {
             "version": "0.58.1"
-        },
-        "ghcr.io/memes/devcontainers-features/vesctl:1": {}
+        }
     },
     "customizations": {
         "vscode": {
