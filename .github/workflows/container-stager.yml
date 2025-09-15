@@ -49,3 +49,12 @@ jobs:
       - name: Copy containers to private repo
         run: |
           gcrane cp busybox:1.37.0 ${{ vars.OCI_REGISTRY }}/busybox:1.37.0
+          gcrane cp ghcr.io/f5devcentral/spa-demo-app-spa@sha256:71d1f3d5f62bca83f7425aa13476b69857d9417a489367f5fa9ec2ec909962ab ${{ vars.OCI_REGISTRY }}/f5devcentral/spa-demo-app-spa@sha256:71d1f3d5f62bca83f7425aa13476b69857d9417a489367f5fa9ec2ec909962ab
+          gcrane cp ghcr.io/f5devcentral/spa-demo-app-recommendations@sha256:e70dd693b209a56d6df9546d43cb00b8f76ef8321688a3ad1856d57d2c57a914 ${{ vars.OCI_REGISTRY }}/f5devcentral/spa-demo-app-recommendations@sha256:e70dd693b209a56d6df9546d43cb00b8f76ef8321688a3ad1856d57d2c57a914
+          gcrane cp ghcr.io/f5devcentral/spa-demo-app-api@sha256:036c0ff2ccc830d33d991c18c955aa4118f41a45ae3daff821f49aaff0b394da ${{ vars.OCI_REGISTRY }}/f5devcentral/spa-demo-app-api@sha256:036c0ff2ccc830d33d991c18c955aa4118f41a45ae3daff821f49aaff0b394da
+          gcrane cp ghcr.io/f5devcentral/spa-demo-app-inventory@sha256:bdc4f53f40098d9fb67d55d6ef72d75d9a8d4efdec6f6036ccaa6c2698ab6e69 ${{ vars.OCI_REGISTRY }}/f5devcentral/spa-demo-app-inventory@sha256:bdc4f53f40098d9fb67d55d6ef72d75d9a8d4efdec6f6036ccaa6c2698ab6e69
+          gcrane cp ghcr.io/f5devcentral/spa-demo-app-spa-dark@sha256:ed958e7b1767abb7cde18b2bcb0dcd610ea39be72cd86161691eaf829843c73f ${{ vars.OCI_REGISTRY }}/f5devcentral/spa-demo-app-spa-dark:@sha256:ed958e7b1767abb7cde18b2bcb0dcd610ea39be72cd86161691eaf829843c73f
+          gcrane cp ghcr.io/f5devcentral/spa-demo-app-checkout@sha256:8d1e72b8489cf4586454f0a0818d310649e85cd9c7b087500e8331da5d09b6ea ${{ vars.OCI_REGISTRY }}/f5devcentral/spa-demo-app-checkout@sha256:8d1e72b8489cf4586454f0a0818d310649e85cd9c7b087500e8331da5d09b6ea
+          gcrane cp mongo@sha256:4bf2adba78074e1f4b4bd8c00a240a72ddbf18243ee2e88ddf9914929c8ae5b8 ${{ vars.OCI_REGISTRY }}/mongo@sha256:4bf2adba78074e1f4b4bd8c00a240a72ddbf18243ee2e88ddf9914929c8ae5b8
+          gcrane cp ghcr.io/grafana/k6@sha256:b617a61c9182e6b922f3e037bfb23b101f8dc7ce3ac133ef8a2e643d95cea031 ${{ vars.OCI_REGISTRY }}/grafana/k6@sha256:b617a61c9182e6b922f3e037bfb23b101f8dc7ce3ac133ef8a2e643d95cea031
+          gcrane cp ghcr.io/grafana/k6-operator@sha256:fdb492fba709ac7ebc6828b0513ea186d74e405cb1f4fa07a8abd50cd4c83e54 ${{ vars.OCI_REGISTRY }}/grafana/k6-operator@sha256:fdb492fba709ac7ebc6828b0513ea186d74e405cb1f4fa07a8abd50cd4c83e54
