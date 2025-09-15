@@ -50,7 +50,6 @@ repos:
       - id: check-toml
       - id: detect-private-key
       - id: end-of-file-fixer
-      # TODO: @memes - remove/modify if push to main is allowed
       - id: no-commit-to-branch
         args:
           - -b

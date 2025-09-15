@@ -1,7 +1,7 @@
 [project]
-name = "terraform-google-f5-demo-bootstrap-template"
+name = "f5-nginxaas-for-google-cloud-examples"
 version = "0.0.1"
-description = "Test harness for bootstrapped repos"
+description = "Test harness for F5 NGINXaaS for Google Cloud examples"
 readme = "README.md"
 requires-python = ">=3.12"
 # spell-checker: disable

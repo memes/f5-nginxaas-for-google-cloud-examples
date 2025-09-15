@@ -42,8 +42,6 @@ env:
 jobs:
   infra-manager:
     runs-on: ubuntu-latest
-    # TODO: Modify environment as needed above and enable in real project that uses infrastructure manager
-    if: false
     env:
       DEPLOYMENT_GIT_URL: "${{ github.server_url }}/${{ github.repository }}"
       DEPLOYMENT_GIT_SHA: "${{ github.sha }}"

@@ -19,8 +19,6 @@ permissions:
 jobs:
   container-stager:
     runs-on: ubuntu-latest
-    # TODO: enable in project bootstrapped from module
-    if: false
     env:
       GCRANE_VERSION: 0.20.6
     steps:
@@ -40,7 +38,6 @@ jobs:
         name: Authenticate to GHCR, if applicable
         run: |
           gcrane auth login ghcr.io --username "${{ github.actor }}" --password "${{ github.token }}"
-      # TODO: remove or disable if not needed for demo environment
       - id: gcrane_nginx_auth
         name: Authenticate to NGINX+ repo, if applicable
         run: |

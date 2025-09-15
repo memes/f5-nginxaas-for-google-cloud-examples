@@ -35,6 +35,7 @@
         ".gitignore",
         ".pre-commit-config.yaml",
         ".github/workflows/infra-manager.yml",
-        ".github/workflows/infra-manager-wrapper.sh"
+        ".github/workflows/infra-manager-wrapper.sh",
+        ".tflint.hcl"
     ]
 }
