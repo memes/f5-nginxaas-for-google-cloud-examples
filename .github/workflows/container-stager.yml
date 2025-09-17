@@ -57,6 +57,6 @@ jobs:
           gcrane cp ghcr.io/f5devcentral/spa-demo-app-checkout@sha256:8d1e72b8489cf4586454f0a0818d310649e85cd9c7b087500e8331da5d09b6ea ${{ vars.OCI_REGISTRY }}/f5devcentral/spa-demo-app-checkout@sha256:8d1e72b8489cf4586454f0a0818d310649e85cd9c7b087500e8331da5d09b6ea
           gcrane cp mongo@sha256:4bf2adba78074e1f4b4bd8c00a240a72ddbf18243ee2e88ddf9914929c8ae5b8 ${{ vars.OCI_REGISTRY }}/mongo@sha256:4bf2adba78074e1f4b4bd8c00a240a72ddbf18243ee2e88ddf9914929c8ae5b8
           gcrane cp ghcr.io/grafana/k6@sha256:b617a61c9182e6b922f3e037bfb23b101f8dc7ce3ac133ef8a2e643d95cea031 ${{ vars.OCI_REGISTRY }}/grafana/k6@sha256:b617a61c9182e6b922f3e037bfb23b101f8dc7ce3ac133ef8a2e643d95cea031
-          gcrane cp ghcr.io/grafana/k6-operator@sha256:fdb492fba709ac7ebc6828b0513ea186d74e405cb1f4fa07a8abd50cd4c83e54 ${{ vars.OCI_REGISTRY }}/grafana/k6-operator@sha256:fdb492fba709ac7ebc6828b0513ea186d74e405cb1f4fa07a8abd50cd4c83e5
+          gcrane cp ghcr.io/grafana/k6-operator@sha256:fdb492fba709ac7ebc6828b0513ea186d74e405cb1f4fa07a8abd50cd4c83e54 ${{ vars.OCI_REGISTRY }}/grafana/k6-operator@sha256:fdb492fba709ac7ebc6828b0513ea186d74e405cb1f4fa07a8abd50cd4c83e54
           gcrane cp private-registry.nginx.com/nginx-ic/nginx-plus-ingress:5.2.0 ${{ vars.OCI_REGISTRY }}/nginx-ic/nginx-plus-ingress:5.2.0
           gcrane cp oci.external-secrets.io/external-secrets/external-secrets:v0.19.2 ${{ vars.OCI_REGISTRY }}/external-secrets/external-secrets:v0.19.2
